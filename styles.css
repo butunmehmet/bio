@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     font-family: "Helvetica", sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Section */
 header {
     background-color: #f4f4f4;
     padding: 2rem;
@@ -20,16 +22,17 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    max-width: 150px;
+    height: auto; /* Preserve aspect ratio */
     margin-right: 2rem;
+    border-radius: 5px; /* Slightly rounded corners for a professional look */
 }
 
 .intro-text {
     flex: 1;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -50,6 +53,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Main Content */
 main {
     max-width: 800px;
     margin: 2rem auto;
@@ -76,15 +80,20 @@ main ul li strong {
     font-size: 1.1rem;
 }
 
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
     background-color: #f4f4f4;
     color: #333333;
     padding: 1rem 0;
     margin-top: 2rem;
-}
-
-a {
-    color: #0073e6;
-    text-decoration: none;
 }
